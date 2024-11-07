@@ -18,7 +18,8 @@
         <img class="rounded" src="https://guscanada.com/wp-content/uploads/2021/09/CCTB_logo_1_RGB.png" width="100px">
         <h2>SQAE113 - DevOps Infrastructure Level 1 - CCTB</h2>
         <p><br>
-        <h3>Feb 2024</H3>
+	<h3>My Favorite Language is JavaScript</h3>
+	<p id="current-date-time"></p>
         </p>
     </div>
     <div class="container">
@@ -57,6 +58,17 @@
     </div>
 
     <script src="js/js.js"></script>
+    <script>
+        // JavaScript to get the current date and time
+        function displayDateTime() {
+            const now = new Date();
+            const dateTimeString = now.toLocaleString(); // Formats the current date and time
+            document.getElementById('current-date-time').textContent = dateTimeString;
+        }
+
+        // Call the function to display the date and time when the page loads
+        window.onload = displayDateTime;
+    </script>
 </body>
 
 </html>
